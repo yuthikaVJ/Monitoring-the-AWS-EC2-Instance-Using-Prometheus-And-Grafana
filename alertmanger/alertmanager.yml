@@ -1,0 +1,16 @@
+global:
+  resolve_timeout: 5m 
+
+route:
+  receiver: "email-alert"
+
+receivers:
+  - name: "email-alert"
+    email_configs:
+    - to: " "
+      from: " "
+      smarthost: "smtp.example.com:587"
+      auth_username: "your_email@gmail.com"
+      auth_password: "your_email_password"
+
+      
