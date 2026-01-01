@@ -14,9 +14,9 @@ rule_files:
 scrape_configs:
    - job_name: prometheus
      static_configs:
-        - target: ["prometheus:9090"]
+        - targets: ["prometheus:9090"]
 
    - job_name: node_exporter
      static_configs:
-       - target: ["node-exporter:9100"]
+       - targets: ["node-exporter:9100"]
     
