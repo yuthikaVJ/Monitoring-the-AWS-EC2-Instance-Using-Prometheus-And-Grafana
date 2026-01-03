@@ -9,3 +9,11 @@ groups:
     annotations:
       summary: "High CPU usage detected"
       description: "CPU usage is above 80% for more than 2 minutes."  
+  - alert: InstanceDown
+    expr: up == 0
+    for: 1m
+    labels:
+     severity: critical
+    annotations:
+      summary: "EC2 Instance Down"
+      description: "An EC2 instance is down for more than 1 minute."
